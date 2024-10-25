@@ -26,3 +26,9 @@ jobs:
 
     - name: Test
       run: go test -v ./...
+    
+    - name: Go-linter
+      uses: Jerome1337/golint-action@v1.0.3
+      with:
+          golint-path: './...'
+            
