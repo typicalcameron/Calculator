@@ -1,2 +1,2 @@
-# calculator
- golang caculator
+# Calculator
+ Golang calculator practicing with bubbletea.
