@@ -65,7 +65,8 @@ func (m model) View() string {
 }
 
 func main() {
-	var number1, number2 int
+	var number1 float64
+	var number2 float64
 
 	fmt.Print("Enter a number: ")
 	fmt.Scan(&number1)
@@ -84,17 +85,16 @@ func main() {
 		switch m.choice {
 		case "*":
 			total := number1 * number2
-			fmt.Println(total)
+			fmt.Printf("The total is: %.2f\n", total)
 		case "+":
 			total := number1 + number2
-			fmt.Println(total)
+			fmt.Printf("The total is: %.2f\n", total)
 		case "-":
 			total := number1 - number2
-			fmt.Println(total)
+			fmt.Printf("The total is: %.2f\n", total)
 		case "/":
-			total := float64(number1 / number2)
-			fmt.Println(total)
+			total := number1 / number2
+			fmt.Printf("The total is: %.2f\n", total)
 		}
 	}
-
 }
